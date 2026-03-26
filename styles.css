@@ -6,6 +6,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    font-family: 'Nunito', sans-serif;
 }
 
 /* NAVBAR CONTAINER */
@@ -13,32 +15,42 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin-top: 32px;
     padding: 16px 32px;
+    gap: 25%;
 }
 
 /* LOGO */
 .logo {
+    display: block;
     width: 84px;
 }
 
 /* NAV LINKS WRAPPER (the yellow pill) */
 .nav-links {
     display: flex;
+
     gap: 200px;
 
-    background-color: #E5C774; /* your yellow */
-    padding: 12px 32px;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
     border-radius: 999px; /* pill shape */
 }
 
 /* LINKS */
 .nav-links a {
     text-decoration: none;
-    color: #5A4632; /* brown-ish text */
-    font-weight: 500;
+    color: #574427; /* brown-ish text */
+    font-weight: 600;
     padding: 4px 8px;
     transition: all 0.2s ease;
+
+    border-radius: 999px;
+    white-space: nowrap;
+    font-size: 24px;
+    
 }
 
 .nav-links a:hover {
@@ -56,10 +68,12 @@ body {
     .nav-links {
         gap: 24px;
         padding: 12px 24px;
+        font-size: 16px;
     }
 
     .logo {
-        height: 42px;
+        height: 64px;
+        width: 64px;
     }
 }
 
@@ -72,7 +86,8 @@ body {
     }
 
     .logo {
-        height: 40px;
+        height: 42px;
+        width: 42px;
     }
 
     .nav-links {
