@@ -7,3 +7,82 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* NAVBAR CONTAINER */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 32px;
+}
+
+/* LOGO */
+.logo {
+    width: 84px;
+}
+
+/* NAV LINKS WRAPPER (the yellow pill) */
+.nav-links {
+    display: flex;
+    gap: 200px;
+
+    background-color: #E5C774; /* your yellow */
+    padding: 12px 32px;
+    border-radius: 999px; /* pill shape */
+}
+
+/* LINKS */
+.nav-links a {
+    text-decoration: none;
+    color: #5A4632; /* brown-ish text */
+    font-weight: 500;
+    padding: 4px 8px;
+    transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: #574427;
+    color: #EFECE9;
+    border-radius: 999px;
+}
+
+/* tablet */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .nav-links {
+        gap: 24px;
+        padding: 12px 24px;
+    }
+
+    .logo {
+        height: 42px;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav-links {
+        width: 100%;
+        box-sizing: border-box;
+        gap: 16px;
+        padding: 12px 16px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
