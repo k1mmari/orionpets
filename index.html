@@ -1,25 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion Pets</title>
-    <!-- Link to CSS -->
+
     <link rel="stylesheet" href="styles.css">
-    <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <!-- Logo -->
-        <a href="index.html">
-            <img src="./assets/logo.png" alt="Orion Pets logo" class="logo">
-        </a>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="./assets/logo.png" alt="Orion Pets logo" class="logo">
+            </a>
 
-        <!-- Nav links -->
-        <div class="nav-links">
-            <a href="#">our brands</a>
-            <a href="#">about us</a>
-            <a href="#">contact us</a>
-        </div>
-    </nav>
+            <div class="nav-links">
+                <a href="brands.html">our brands</a>
+                <a href="#about">about us</a>
+                <a href="#contact">contact us</a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <div class="hero-image-card">
+                    <img src="./assets/landingPhoto.png" alt="A cat being gently petted">
+                </div>
+
+                <div class="hero-content">
+                    <h1>Good products for pets, chosen with care.</h1>
+                    <p>
+                        Orion Pets brings together a curated selection of products designed
+                        to support your pet’s everyday needs. We focus on quality, comfort,
+                        and reliability—so you can choose with confidence.
+                    </p>
+                    <a href="brands.html" class="btn btn-primary">Explore</a>
+                </div>
+            </section>
+
+            <section id="about" class="about-card">
+                <div class="about-text">
+                    <h2>About Orion Pets</h2>
+                    <p>
+                        Orion Pets is a curated pet product store focused on bringing
+                        together reliable, everyday essentials for pets and their owners.
+                    </p>
+                    <p>
+                        We source and select products that meet our standards for comfort,
+                        safety, and usability—so you don’t have to spend time sorting
+                        through endless options.
+                    </p>
+                    <p>
+                        Caring for a pet should feel simple and intuitive. Our goal is to
+                        make it easier to find products you can trust, all in one place.
+                    </p>
+                </div>
+
+                <div class="about-image-card">
+                    <img src="./assets/aboutPhoto.png" alt="A small white dog looking up">
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="section-label">Contact Us</div>
+
+                <p class="contact-intro">
+                    For any questions and inquires, please, reach us at
+                </p>
+
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <a href="mailto:info@orionpets.com">info@orionpets.com</a>
+                        </div>
+
+                        <div class="contact-item contact-address">
+                            <span class="contact-icon">📍</span>
+                            <p>
+                                15922 Strathern St STE20, Van Nuys, CA 91406
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="map-card">
+                            <iframe 
+                                src="https://www.google.com/maps?q=15922+Strathern+St+STE20,+Van+Nuys,+CA&output=embed"
+                                width="100%" 
+                                height="250" 
+                                style="border:0;" 
+                                loading="lazy">
+                            </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-left">
+                <img src="./assets/logo.png" alt="Orion Pets logo" class="footer-logo">
+            </div>
+
+            <div class="footer-center">
+                <a href="#about">About Us</a>
+                <a href="brands.html">Our brands</a>
+            </div>
+
+            <div class="footer-right">
+                <p>15922 Strathern St STE20, Van Nuys, CA 91406</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
