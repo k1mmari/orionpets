@@ -87,6 +87,11 @@ a {
     transform: translateY(-1px);
 }
 
+.nav-links a.active {
+    background-color: #574427;
+    color: #D9D9D9;
+}
+
 /* MAIN */
 main {
     padding: 8px 24px 40px;
@@ -301,6 +306,28 @@ main {
     height: 100%;
     min-height: 220px;
 }
+
+.brand-header {
+    width: 100%;
+    margin: 10px 0 24px;
+}
+
+.brand-bar {
+    width: 80%; /* control how far it goes */
+    max-width: 720px; /* optional cap */
+    
+    background-color: #574427;
+    color: #D9D9D9;
+
+    padding: 12px 26px;
+    border-radius: 0 16px 16px 0; /* only right side rounded */
+
+    font-size: 24px;
+    font-weight: 800;
+
+    box-shadow: var(--shadow);
+}
+
 
 /* FOOTER */
 .footer {
