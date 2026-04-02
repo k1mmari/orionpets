@@ -128,6 +128,10 @@ main {
     max-width: 380px;
 }
 
+.hero-image-card:hover{
+    transform: scale(1.05px);
+}
+
 .hero-image-card img {
     width: 100%;
     height: 100%;
